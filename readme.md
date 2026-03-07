@@ -1,0 +1,46 @@
+# Recurrent Memory Transformer Experiments
+
+## Overview
+
+This project explores the implementation and evaluation of the Recurrent Memory Transformer (RMT), a memory-augmented extension of the Transformer architecture proposed by Yandex Research. The model introduces segment-level recurrence using special memory tokens that pass information between sequence segments, enabling the model to process much longer contexts than standard Transformers.
+
+## Objectives
+
+* Implement a baseline decoder-only Transformer language model in PyTorch.
+* Fine-tune GPT-2 small and extend it with memory tokens.
+* Implement a simplified RMT-style memory mechanism.
+* Evaluate the effect of memory on long-context language modeling.
+
+## Experiments
+
+The project includes two main experimental setups:
+
+1. **Baseline Transformer**
+
+   * Train a small decoder-only Transformer from scratch.
+   * Evaluate language modeling performance on long sequences.
+
+2. **GPT-2 with Memory Tokens**
+
+   * Fine-tune GPT-2 small.
+   * Introduce memory tokens passed between sequence segments.
+   * Compare performance with the baseline GPT-2 model.
+
+## Datasets
+
+Experiments will primarily use:
+
+* WikiText-103/ NarrativeQA
+
+## Evaluation
+
+Models will be evaluated using:
+
+* Perplexity for language modeling
+* BLEU / ROUGE for generation tasks
+* Long-range dependency tests
+
+## Goal
+
+The goal is to analyze whether introducing recurrent memory improves long-context understanding and coherence compared to standard Transformer models.
+
