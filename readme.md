@@ -17,11 +17,10 @@ The project includes two main experimental setups:
    * Train a small decoder-only Transformer from scratch.
    * Evaluate language modeling performance on long sequences.
 
-2. **GPT-2 with Memory Tokens**
+2. **Augmented Transformer with Memory Tokens**
 
-   * Fine-tune GPT-2 small.
    * Introduce memory tokens passed between sequence segments.
-   * Compare performance with the baseline GPT-2 model.
+   * Compare performance with the baseline model.
 
 ## Datasets
 
